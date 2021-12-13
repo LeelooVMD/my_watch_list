@@ -1,0 +1,2 @@
+class SeriemarksController < ApplicationController
+end

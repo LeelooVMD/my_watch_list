@@ -1,0 +1,2 @@
+class MoviemarksController < ApplicationController
+end
