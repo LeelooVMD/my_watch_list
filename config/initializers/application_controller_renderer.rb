@@ -6,3 +6,5 @@
 #     https: false
 #   )
 # end
+Tmdb::Api.key("c68b2b3bd36ab88d40f57f474529502c")
+Tmdb::Api.language("en")
