@@ -1,4 +1,5 @@
 <div class= 'home-container d-flex'>
+  <%# bloc menu sur la gauche %>
   <div class= 'menu'>
     <%= image_tag('avatar.jpg', size: 150 ) %>
     <div>
@@ -30,17 +31,18 @@
       </ul>
     </div>
   </div>
+  <%# boutons movies et series %>
   <div class= 'search-bar'>
     <div class = 'd-flex justify-content-between align-items-center'>
       <div class = 'type-btn'>
         <button>Movies</button>
         <button>Series</button>
       </div>
-      <div class="search-box">
-        <button class="btn-search"><i class="fas fa-search"></i></button>
-        <input type="text" class="input-search" placeholder="Type to Search...">
-      </div>
     </div>
   </div>
 
+  <%# list de listes %>
+  <% @lists.each do |list| %>
+  <%= list.name %>
+  <% end %>
 </div>
