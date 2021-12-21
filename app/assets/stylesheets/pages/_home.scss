@@ -1,1 +1,67 @@
 // Specific CSS for your home-page
+.home-container {
+  background-color: #6281FF;
+  height: 100vh;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 15px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 35px;
+  background-color: #2853ff;
+  box-shadow: 0 3px 10px 0px rgb(2, 4, 146);
+  img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+}
+
+
+// https://picular.co/bluemoon
+
+// body {
+//   display: flex;
+//   height: 100vh;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   background: #1A1E23;
+// }
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    padding: 6px 0;
+
+    a {
+      --fill-color: #91cfff;
+      position: relative;
+      display: block;
+      padding: 4px 0;
+      font: 700 1.5rem Raleway, sans-serif;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      -webkit-text-stroke: 2px var(--fill-color);
+      background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+      color: transparent;
+      background-clip: text;
+      transition: 0.5s linear;
+
+      &:hover {
+        background-size: 100%;
+      }
+    }
+  }
+}
