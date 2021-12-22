@@ -6,6 +6,8 @@ class ListsController < ApplicationController
 
   def show
     @list = List.find(params[:id])
+    @moviemark = Moviesmark.new
+    @seriemark = Seriemark.new
   end
 
   def new
@@ -30,6 +32,6 @@ class ListsController < ApplicationController
   private
 
   def list_params
-    params.require(:lists).permit(:name)
+    params.require(:lists).permit(:name, :photo)
   end
 end
