@@ -70,7 +70,7 @@
         </div>
       <% else %>
       <%# If there is no photo attached and no movie, just add a grey background %>
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))" >
+        <div class="card-category" style="background-image: linear-gradient(rgba(41, 83, 254, 1), rgba(41, 83, 254, 1))" >
           <%= link_to list.name, list_path(list) %>
         <div class="delete-button">
             <%= link_to list_path(list), method: :delete do %>
